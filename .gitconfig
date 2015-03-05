@@ -15,3 +15,7 @@
 	diff = auto
 	status = auto
 	branch = auto
+
+# dotbot local override
+[include]
+	path = ~/.gitconfig_local
