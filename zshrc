@@ -79,6 +79,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Let Oh My Zsh autoupdate
+DISABLE_UPDATE_PROMPT=true
+
 # dotbot local config override
 if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
