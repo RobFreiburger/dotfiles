@@ -82,6 +82,11 @@ source $ZSH/oh-my-zsh.sh
 # Let Oh My Zsh autoupdate
 DISABLE_UPDATE_PROMPT=true
 
+# Prevent accidents...
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
 # dotbot local config override
 if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
