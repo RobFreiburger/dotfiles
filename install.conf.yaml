@@ -6,8 +6,6 @@
     ~/.gitignore_global: gitignore_global
     ~/.oh-my-zsh: oh-my-zsh
     ~/.zshrc: zshrc
-    ~/.zsh-update: zsh-update
-    ~/.zcompdump: zcompdump
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
