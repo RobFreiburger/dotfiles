@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(common-aliases composer git node npm phing svn yum)
 
 # User configuration
 
@@ -81,11 +81,6 @@ fi
 
 # Let Oh My Zsh autoupdate
 DISABLE_UPDATE_PROMPT=true
-
-# Prevent accidents...
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
 
 # dotbot local config override
 if [ -f ~/.zshrc_local ]; then
