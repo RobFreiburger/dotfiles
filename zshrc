@@ -13,6 +13,9 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Don't show prompt during auto-update checks.
+DISABLE_UPDATE_PROMPT=true
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
@@ -45,7 +48,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew brew-cask bundler common-aliases gem git git-flow-avh git-remote-branch gitignore grunt heroku history mosh node npm osx rbenv screen svn textmate vagrant xcode)
+plugins=(brew brew-cask common-aliases git git-flow-avh git-remote-branch gitignore heroku history mosh osx screen textmate xcode)
 
 # User configuration
 
@@ -74,9 +77,6 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Let Oh My Zsh autoupdate
-DISABLE_UPDATE_PROMPT=true
 
 # dotbot local config override
 if [ -f ~/.zshrc_local ]; then
