@@ -1,6 +1,7 @@
 [user]
 	name = Rob Freiburger
 	email = rob@robfreiburger.com
+	signingkey = A5DA8794810F1927
 [credential]
 	helper = osxkeychain
 [filter "media"]
@@ -23,3 +24,6 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
+[commit]
+	gpgsign = true
